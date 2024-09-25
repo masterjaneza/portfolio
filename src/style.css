@@ -1,0 +1,613 @@
+/* Font */
+
+/* Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Inconsolata */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* reset padding and margin */
+    * {
+        @apply p-0 m-0 box-border;
+    }
+
+    ::selection {
+      background-color: black;
+      color: white;
+    }
+    /* header background image */
+    /* header {
+      background-image: url('../images/portfolio image-2.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+  } */
+  
+
+}
+
+/* styling li element */
+
+.custom-nav-li-style {
+    @apply text-white uppercase font-inconsolata ml-10 mt-[4px] text-sm tracking-[4px] font-medium;
+}
+
+
+/* created underline animation */
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none; /* Remove default underline */
+    color: white;
+    cursor: pointer;
+
+}
+  
+  .underline-hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with no underline */
+    height: 2px; /* Thickness of the underline */
+    background-color: #fff; /* Match text color */
+    transition: width 0.3s ease; /* Smooth transition */
+
+  }
+  
+  .underline-hover:hover::after {
+    width: 100%; /* Full underline on hover */
+  }
+
+
+  /* Dropdown menu style */
+
+  .dropdown-menu-style-li {
+    @apply relative -left-[20px] p-[0.7rem] flex justify-center items-center;
+  }
+
+
+  .dropdown-menui {
+    height: 0;
+    transition: height 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .dropdown-menui.open {
+    height: 320px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    header {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+/* Animation */
+
+.up {
+  animation: up 1.3s;
+}
+
+
+@keyframes up {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+
+.up1 {
+  animation: up1 1.9s;
+}
+
+
+@keyframes up1 {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translate(0px);
+    font-size: 14px;
+  }
+}
+
+
+.up2 {
+  animation: up2 2.5s;
+}
+
+
+@keyframes up2 {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translate(0px);
+    font-size: 14px;
+  }
+}
+
+.up3 {
+  animation: up3 3.1s;
+}
+
+
+@keyframes up3 {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translate(0px);
+    font-size: 14px;
+  }
+}
+
+.up4 {
+  animation: up4 3.7s;
+}
+
+
+@keyframes up4 {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translate(0px);
+    font-size: 14px;
+  }
+}
+
+.up5 {
+  animation: up5 4.3s;
+}
+
+
+@keyframes up5 {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translate(0px);
+    font-size: 14px;
+  }
+}
+
+.up6 {
+  animation: up6 4.9s;
+}
+
+
+@keyframes up6 {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translate(0px);
+    font-size: 14px;
+  }
+}
+
+.up7 {
+  animation: up7 5.5s;
+}
+
+
+@keyframes up7 {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translate(0px);
+    width: 24px;
+  }
+}
+
+.up8 {
+  animation: up8 6.1s;
+}
+
+
+@keyframes up8 {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+/* 
+.up9 {
+  animation: up9 6.7s;
+}
+
+
+@keyframes up9 {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+} */
+
+
+
+/* toggle button animation */
+
+.toggle_btn  {
+  animation: toggle_btn 1.5s;
+}
+
+@keyframes toggle_btn {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+
+/* Name & Lastname Animation */
+
+.name_lastname_animation {
+  animation: name_lastname_animation 2s ease-out;
+}
+
+
+@keyframes name_lastname_animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.proffesion_animation {
+  animation: proffesion_animation 3.6s;
+}
+
+@keyframes proffesion_animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.background_image_change {
+  /* animation: background_image_change 35s ease-in-out infinite; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes background_image_change {
+  /* Start with the first image fully visible */
+  0%, 44% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+    opacity: 1;
+    transform: scale(1) rotate(0deg) translateX(0);
+  }
+  
+  /* Gradually fade out the first image and add transform effects */
+  45% {
+    opacity: 0;
+    transform: scale(1.1) rotate(5deg) translateX(-50px);
+  }
+  
+  /* Fade in the second image smoothly */
+  50%, 55% {
+    background-image: url('../images/portfolioimage-5.jpg');
+    opacity: 0;
+    transform: scale(1.1) rotate(5deg) translateX(50px);
+  }
+  
+  /* Show the second image fully with a slight zoom and reset rotation */
+  60%, 84% {
+    background-image: url('../images/portfolioimage-5.jpg');
+    opacity: 1;
+    transform: scale(1) rotate(0deg) translateX(0);
+  }
+  
+  85% {
+    opacity: 0;
+    transform: scale(1.1) rotate(5deg) translateX(-50px);
+  }
+
+  /* Smoothly fade out the second image and prepare for the first image */
+  100% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+    opacity: 1;
+    transform: scale(1) rotate(0deg) translateX(0);
+  }
+}
+
+
+
+/* Main content style */
+
+
+
+/* Read more button */
+/* Sheen effect */
+.sheen-button {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sheen-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.5s;
+}
+
+.sheen-button:hover::before {
+  left: 100%;
+}
+
+.sheen-button:hover {
+  background-color: #1f584a;
+  transform: scale(1.05);
+}
+
+/*
+  51, 124, 160 good blue
+  368E78 green
+*/
+
+
+/* Shadows */
+
+.img_glow {
+  box-shadow: 0px 0px 17px 0px rgba(30, 168, 150,0.58);
+
+}
+
+.text_shadow_gen {
+  text-shadow: rgba(65, 157, 120,0.96) 0px 0px 98px;
+}
+
+.info_text_shadow_gen {
+  text-shadow: rgba(3, 71, 72,0.96) 0px 0px 4px;
+}
+
+.btn_box_shadow {
+  box-shadow: 0px 10px 74px 0px rgba(3,71,72,0.35);
+}
+
+
+
+/* =============== */
+
+
+/* Text animation */
+
+
+.text_anim{
+	animation: text_anim 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes text_anim {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* Img animation */
+
+
+.img_anim {
+	animation: img_anim 1.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@keyframes img_anim {
+  0% {
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform-origin: 100% 50%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+
+}
+
+/* info text animation */
+
+
+.p_text_anim {
+  animation: p_text_anim 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes p_text_anim {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+/* btn animation */
+
+.btn_anim {
+  animation: btn_anim 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@keyframes btn_anim {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+
+
+/* Background image change animation */
+/* 
+.background_image_change {
+  animation: background_image_change 15s ease-in-out infinite;
+}
+
+
+@keyframes background_image_change {
+  0% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  5% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+
+  }
+  10% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  15% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  20% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  25% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  30% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  35% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  40% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+  }
+  45% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+    transform: translateX(100px);
+  }
+  50% {
+    background-image: url('../images/portfolioimage-5.jpg');
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  55% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 60% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 65% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 70% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 75% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 80% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 85% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 90% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 95% {
+    background-image: url('../images/portfolioimage-5.jpg');
+  } 100% {
+    background-image: url('../images/portfolioimage-5.jpg');
+    transform: translateX(100px);
+  }
+
+} */
+/* .background_image_change {
+  animation: background_image_change 15s ease-in-out infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes background_image_change {
+  /* First image shown initially */
+  /* 0%, 45% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+    opacity: 1;
+    transform: translateX(0);
+  } */
+  
+  /* Fade to second image */
+  /* 50% {
+    background-image: url('../images/portfolioimage-5.jpg');
+    opacity: 0;
+    transform: translateX(100px);
+  } */
+  
+  /* Show second image */
+  /* 55%, 90% {
+    background-image: url('../images/portfolioimage-5.jpg');
+    opacity: 1;
+    transform: translateX(0);
+  } */
+  
+  /* Fade back to first image */
+  /* 95% {
+    background-image: url('../images/portfolioimage-4 (1).jpg');
+    opacity: 0;
+    transform: translateX(100px);
+  } */
+
+  /* 100% { */
+    /* background-image: url('../images/portfolioimage-4 (1).jpg');
+    transform: translateX(0px);
+
+  } */
+/* }  */
