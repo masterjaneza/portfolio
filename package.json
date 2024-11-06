@@ -4,7 +4,8 @@
   "description": "personal portfolio",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i src/style.css -o public/output.css"
+    "build": "tailwindcss -i src/style.css -o public/output.css",
+    "postinstall": "if [ -f node_modules/.bin/tailwindcss ]; then chmod +x node_modules/.bin/tailwindcss; fi"
   },
   "keywords": [],
   "author": "Davit Janezahvili",
@@ -13,7 +14,7 @@
     "tailwindcss": "^3.4.10"
   },
   "engines": {
-    "node": "16.x"
+    "node": "20.x"
   }
-
 }
+
