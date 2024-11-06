@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i src/style.css -o public/output.css",
-    "postinstall": "if [ -f node_modules/.bin/tailwindcss ]; then chmod +x node_modules/.bin/tailwindcss; fi"
+    "postinstall": "if [ -f node_modules/.bin/tailwindcss ]; then chmod +x node_modules/.bin/tailwindcss; fi",
+    "start": "live-server public"
   },
   "keywords": [],
   "author": "Davit Janezahvili",
@@ -15,6 +16,8 @@
   },
   "engines": {
     "node": "20.x"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
-
