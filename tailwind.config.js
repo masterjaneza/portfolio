@@ -9,7 +9,9 @@ module.exports = {
     extend: { 
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
-        inconsolata: ['Inconsolata', 'monospace']
+        inconsolata: ['Inconsolata', 'monospace'],
+        lato: ['Lato', 'sans-serif'],
+        rubik_vinyl: ['"Rubik Vinyl", system-ui']
       },
       screens: {
         'sm': '640px',

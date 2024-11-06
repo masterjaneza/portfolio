@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
 
      <!-- Main container  -->
-    <div>
+    <div class="max-mobile-S:w-full">
         <!-- header lg:w-full mlg:w-full max-xl:w-full-->
        <header class="w-full h-[1362px] bg-slate-800 bg-opacity-40 max-lg:w-full
        bg-[url('../images/portfolioimage-4%20(1).jpg')] bg-no-repeat bg-cover 
@@ -31,11 +31,11 @@
                 <ul class="flex">
                     <li class="up uppercase font-bold font-rubik text-white text-2xl mr-5 max-425:ml-[50px] max-375:ml-[50px] max-320:ml-[20px]">PROGRAMMER.</li>
 
-                    <li class="up1 custom-nav-li-style underline-hover max-1080:hidden"><a href="#">home</a></li>
-                    <li class="up2 custom-nav-li-style underline-hover max-1080:hidden"><a href="#">programs</a></li>
-                    <li class="up3 custom-nav-li-style underline-hover max-1080:hidden"><a href="#">gallery</a></li>
-                    <li class="up4 custom-nav-li-style underline-hover max-1080:hidden"><a href="#">about me</a></li>
-                    <li class="up5 custom-nav-li-style underline-hover max-1080:hidden"><a href="#">contact</a></li>
+                    <li class="up1 custom-nav-li-style underline-hover max-1080:hidden"><a href="#home">HOME</a></li>
+                    <li class="up2 custom-nav-li-style underline-hover max-1080:hidden"><a href="#aboutme">ABOUT ME</a></li>
+                    <li class="up3 custom-nav-li-style underline-hover max-1080:hidden"><a href="#myprojects">PROJECTS</a></li>
+                    <li class="up4 custom-nav-li-style underline-hover max-1080:hidden"><a href="#gallery">GALLERY</a></li>
+                    <li class="up5 custom-nav-li-style underline-hover max-1080:hidden"><a href="#contactme">CONTACT</a></li>
                     <!-- class="up6 relative left-[1400px] md:left-[600px] sm:left-[300px] max-3xl:left-[900px]" -->
                     <li class="up6 relative 3xl:left-[1500px] 2xl:left-[830px] xl:left-[400px] lg:left-[120px] max-1080:hidden">
                         <a href="https://github.com/masterjaneza" target="_blank">
@@ -75,11 +75,11 @@
                 ">
                 
                     
-                    <li class="up1 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#">home</a></li>
-                    <li class="up2 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#">programs</a></li>
-                    <li class="up3 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#">gallery</a></li>
-                    <li class="up4 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#">about me</a></li>
-                    <li class="up5 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#">contact</a></li>
+                    <li class="up1 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#home">HOME</a></li>
+                    <li class="up2 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#aboutme">ABOUT ME</a></li>
+                    <li class="up3 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#myprojects">PROJECTS</a></li>
+                    <li class="up4 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#gallery">GALLERY</a></li>
+                    <li class="up5 custom-nav-li-style underline-hover dropdown-menu-style-li"><a href="#contactme">CONTACT US</a></li>
                     
                     <div class="flex gap-10 list-none pb-10 max-375:gap-4 max-375:relative max-375:right-[25px]">    
                         <li class="up6 relative 3xl:left-[1500px] 2xl:left-[830px] xl:left-[400px] lg:left-[120px] max-1080:left-[70px] pt-4
@@ -142,43 +142,454 @@
 
 
         <!-- Start of Div -->
-        <main class="w-full h-[1400px] relative flex justify-center items-center gap-[70px] max-laptop:flex-col max-laptop:justify-between max-laptop:mt-[600px] max-laptop:">
+        <main class="w-full h-[900px] mt-[300px] relative flex justify-center items-center gap-[70px] max-laptop:flex-col max-laptop:justify-between max-laptop:mt-[600px]">
             
-            <div class="flex -mt-[400px]">
-                <img src="/images/portfolio image-3 (1).jpg" alt="Image of Davit Janezashvili" class="img_glow img_anim h-[770px] mr-[100px] rounded-3xl max-laptop:w-[600px] max-laptop:h-[600px] max-mobile-L:w-[400px] max-mobile-L:h-[450px] max-mobile-S:w-[300px] max-mobile-S:h-[350px] ">
+            <div class="flex -mt-[400px] max-laptop:mb-0"  id="aboutme" >
+                <img src="/images/portfolio image-2.jpg" alt="Image of Davit Janezashvili" class="img_glow img_anim w-[1100px] h-[770px] mr-[100px] rounded-3xl  max-laptop:w-[600px] max-laptop:h-[600px] max-mobile-L:w-[400px] max-mobile-L:h-[450px] max-mobile-S:w-[300px] max-mobile-S:h-[350px] ">
             </div> 
                 
             <div class="-mt-[500px] flex flex-col gap-16 max-laptop:mb-[160px]">
  
-                <h1 class="font-rubik font-bold capitalize tracking-[1px] text-5xl max-laptop:absolt max-laptop:absolute max-laptop:-top-[500px]
+                <h1 class="font-rubik font-bold uppercase tracking-[1px] text-5xl max-laptop:absolt max-laptop:absolute max-laptop:-top-[500px]
                 max-mobile-L:ml-[60px] max-mobile-S:ml-[13px] 
-                text_shadow_gen text_anim">about me
-                    <hr class="border-t-[3px] border-[#577651] w-[200px] mt-[10px]">
+                text_shadow_gen text_anim text-transparent bg-clip-text bg-gradient-to-b from-[#306B34] to-[#5D3A00]">
+                    about me
+                <hr class="border-t-[3px] border-[#577651] w-[200px] mt-[10px]">
                 </h1>
-                <p class="max-w-[560px] font-inconsolata text-2xl max-mobile-L:max-w-[350px] max-mobile-S:w-[300px] max-mobile-S:mt-[30px] info_text_shadow_gen p_text_anim">I am Davit Janezashvili—a multifaceted professional, full-stack developer, UI designer, graphic designer, and mentor. I have many years of experience in each of these fields, and my work is distinguished by its quality and cleanliness. Currently, I am a mentor at GOAL-ORIENTED-ACADEMY, a programming academy. I have experience collaborating with both foreign and Georgian companies and am always focused on achieving results.
-            </p>
+                    <p class="max-w-[560px] font-inconsolata text-2xl  max-mobile-L:max-w-[350px] max-mobile-S:w-[300px] max-mobile-S:mt-[30px] info_text_shadow_gen p_text_anim">I am Davit Janezashvili—a multifaceted professional, full-stack developer, UI designer, graphic designer, and mentor. I have many years of experience in each of these fields, and my work is distinguished by its quality and cleanliness. Currently, I am a mentor at GOAL-ORIENTED-ACADEMY, a programming academy. I have experience collaborating with both foreign and Georgian companies and am always focused on achieving results.
+                </p>
 
-            <button data-anim="sheen" class="sheen-button w-[350px] h-[70px] bg-[#5A7D7C] text-white text-2xl rounded-2xl max-mobile-S:w-[250px] max-mobile-S:ml-[28px] btn_box_shadow btn_anim">Read More</button>
-            
-
+                <button data-anim="sheen" class="sheen-button w-[350px] h-[70px] bg-[#5A7D7C] text-white text-2xl rounded-2xl max-mobile-S:w-[250px] max-mobile-S:ml-[28px] btn_box_shadow btn_anim">↑</button>
+            <!-- img_anim  text_anim p_text_anim sheen-button -->
             </div>
-            
-            <div></div>    
         </main>
 
-        <section>
+        <!-- Progress bar! -->
+        <section class="mb-[200px]">
+            <div class="flex justify-center items-center mb-[100px]">       
+              <h1 class="my_skill_text font-lato text-[70px] tracking-[12px] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#9EBC9F] to-[#247BA0]
+              max-mobile-L:text-[50px] max-mobile-S:text-[50px] max-mobile-S:tracking-[0px] ">my skills</h1>
+            </div>
+            <!-- circle progress bar add -->
+          
+            <!-- Web Development bar -->
+            <div class="flex flex-wrap justify-evenly">
+              <div class="skill first_progress_bar_anim">
+                <div class="outer">
+                  <div class="inner">
+                    <h2 class="skill_type">Web Development</h2>
+                    <div id="number1"></div>
+                  </div>
+                </div>
+                <svg id="progress1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor1">
+                      <stop offset="0%" stop-color="#8E44AD" />
+                      <stop offset="100%" stop-color="#0000ff" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" stroke="url(#GradientColor1)" />
+                </svg>
+              </div>
+          
+              <!-- Graphic Design bar -->
+              <div class="skill2 second_progress_bar_anim">
+                <div class="outer2">
+                  <div class="inner2">
+                    <h2 class="skill_type_grapic">Graphic Design</h2>
+                    <div id="number2"></div>
+                  </div>
+                </div>
+                <svg id="progress2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor2">
+                      <stop offset="0%" stop-color="#1F584A" />
+                      <stop offset="100%" stop-color="#4DB6A8" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="circle2" cx="80" cy="80" r="70" stroke-linecap="round" stroke="url(#GradientColor2)" />
+                </svg>
+              </div>
+          
+              <!-- UI Design bar -->
+              <div class="skill3 third_progress_bar_anim">
+                <div class="outer3">
+                  <div class="inner3">
+                    <h2 class="skill_type_ui">UI Design</h2>
+                    <div id="number3"></div>
+                  </div>
+                </div>
+                <svg id="progress3" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor3">
+                      <stop offset="0%" stop-color="#1F584A" />
+                      <stop offset="100%" stop-color="#4DB6A8" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="circle3" cx="80" cy="80" r="70" stroke-linecap="round" stroke="url(#GradientColor3)" />
+                </svg>
+              </div>
+          
+              <!-- Mentor Design bar -->
+              <div class="skill4 fourth_progress_bar_anim">
+                <div class="outer4">
+                  <div class="inner4">
+                    <h2 class="skill_type_mentor">Mentor</h2>
+                    <div id="number4"></div>
+                  </div>
+                </div>
+                <svg id="progress4" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor4">
+                      <stop offset="0%" stop-color="#1F584A" />
+                      <stop offset="100%" stop-color="#4DB6A8" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="circle4" cx="80" cy="80" r="70" stroke-linecap="round" stroke="url(#GradientColor4)" />
+                </svg>
+              </div>
+            </div>
+          </section>
+          
 
-        </section>
-
-        <footer>
-
-        </footer>
+        
     </div>
+
+    <!-- Projects Section -->
+ 
+    <section class="mt-[300px] w-full h-[500px]">
+      <div class="flex justify-center items-center mb-[100px]">
+        <h1 class="font-lato text-[70px] tracking-[5px] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#CE6C47] to-[#241E4E]
+        max-mobile-L:text-[50px] max-mobile-M:text-[50px] max-mobile-M:tracking-[0px] max-mobile-S:text-[43px] max-mobile-S:tracking-[0px] my_projects_title_anim" id="myprojects">my projects</h1>
+      </div>
+    
+      <div class="flex flex-wrap justify-evenly max-mobile-S:gap-[40px]">
+  
+        <div class="project_section_div_style project_div_1 group">
+          <span class="group-hover:hidden">
+            bank
+          </span>
+          <div class="hidden group-hover:block group-hover:bg-gray-300">COMING SOON!</div>
+        </div>         
+
+        
+          <div class="project_section_div_style project_div_2 group">
+            <span class="group-hover:hidden">
+              travel website
+            </span>
+            <div class="hidden group-hover:block group-hover:bg-gray-300">COMING SOON!</div>
+          </div>
+          
+          <div class="project_section_div_style project_div_3 group">
+            <span class="group-hover:hidden">
+              amazon
+            </span>
+          
+            <div class="hidden group-hover:block group-hover:bg-gray-300">COMING SOON!</div>
+          </div>
+      
+        </div>
+    
+    </section>
+
+    
+
+
+    <!-- Gallery Section -->
+
+    <section class="mt-[350px] w-full h-[1000px]">
+      <div class="flex flex-col justify-center items-center mb-[100px]
+        max-tablet:mt-[450px] 
+        max-mobile-L:mt-[750px]
+        max-mobile-M:mt-[450px]
+        max-mobile-S:mt-[550px]
+      ">
+      <!-- GALLERY TITLE TEXT -->
+        <h1 class="font-lato text-[70px] font-extrabold tracking-[5px] uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#D2BF55] to-[#2B061E]
+        
+        max-mobile-L:text-[50px] 
+        max-mobile-M:text-[50px] 
+        max-mobile-S:text-[43px]
+
+        gallery_text_anim
+        " id="gallery">gallery</h1>
+        
+        <br>
+        <!-- TEXT BELOW GALLERY TITLE -->
+        <h2 class="text-[25px] font-rubik font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#1A1D1A] to-[#26413C]
+        
+        max-mobile-L:text-[15px] 
+        max-mobile-M:text-[15px] 
+        max-mobile-S:text-[13px]
+        
+        img_text_anim
+        ">images of me and with my students</h2>
+      </div>
+
+      <!-- IMAGE SECTION -->
+
+      <div class="flex flex-wrap gap-[50px] justify-center">
+
+        <img src="/images/working on goaland (1) (1).jpg" class="gallery_images object-cover img1" alt="">
+
+        <img src="/images/Video Grapher Janeza.jpg" class="gallery_images img2" alt="">
+        
+        <img src="/images/portfolioimage-5.jpg" class="gallery_images object-cover img3" alt="">
+
+        <img src="/images/image with izoria.jpg" class="gallery_images object-cover img4" alt="">
+        
+        <img src="/images/image with xomeriki.jpg" class="gallery_images img5" alt="">
+        
+        <img src="/images/With Nika Keshelava.jpg" class="gallery_images img6" alt="">
+        
+        <img src="/images/image with students.jpeg" class="gallery_images img7" alt="">
+
+      </div>
+
+      <!-- My Mission & Vision Section -->
+        
+          <section class="mt-[200px] w-full flex justify-center items-center flex-wrap ">
+            
+            <div class="flex flex-col items-start m-14">
+                <div class="overflow-hidden w-0 whitespace-nowrap reveal">
+                  <p class="inline-block capitalize text-[36px] font-lato font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-[#26413C] to-[#8AB0AB] max-mobile-S:ml-[40px]">my mission</p>
+                </div>
+              <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0] max-mobile-L:w-[350px] max-mobile-L:h-[610px] max-mobile-S:w-[300px] max-mobile-S:h-[800px]">
+                <div class="overflow-hidden w-0 whitespace-normal mission_txt_anim">   
+                  <p class="font-inconsolata text-[20px] leading-7 font-semibold tracking-[1px] p-8 max-mobile-L:tracking-[0px]"><span>My mission is to be part of a continuous process of development, innovation, and knowledge sharing,
+                  where I use my technical skills and mentorship to help others grow professionally.
+                  My goal is to create high-quality, effective, and user-centric technological solutions
+                  that enhance the industry and strengthen teamwork.
+                  Mentorship for me is not just about transferring knowledge;
+                  it’s also a source of inspiration that encourages the next generation to acquire skills
+                    and confidently pursue their goals. </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex flex-col items-start">
+                <div class="overflow-hidden w-0 whitespace-nowrap reveal">
+                  <p class="inline-block capitalize text-[36px] font-lato font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-[#26413C] to-[#8AB0AB] max-mobile-S:ml-[40px]">my vision</p>
+                </div>
+
+                <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0] max-mobile-L:w-[350px] max-mobile-L:h-[610px] max-mobile-S:w-[300px] max-mobile-S:h-[800px]">
+                  <div class="overflow-hidden w-0 whitespace-normal mission_txt_anim">   
+                      <p class="font-inconsolata text-[20px] leading-7 font-semibold tracking-[1px] p-8 max-mobile-L:tracking-[0px] mission_txt_anim">My vision is to be a leader in the technology and design fields, combining innovative approaches with mentorship to support the professional growth of future generations. I see myself not only as the author of successful projects but also as a leader who fosters new talents through mentorship and guides them toward career success. I take pride in being part of a process that ignites innovation and nurtures new professionals who will continue to drive the development of the industry.
+                      </p>
+                  </div>
+              </div>
+            </div>
+          </section>
+          
+        
+          <!-- Contact me section -->
+          
+      
+            <!-- Footer Section -->
+
+
+              <section class="mt-[400px] w-full">
+                <div class="flex justify-center">
+                  <h1 class="font-lato text-[70px] font-extrabold tracking-[5px] uppercase text-transparent bg-clip-text bg-gradient-to-bl from-[#587B7F] to-[#FF4E00]
+                  
+                  max-mobile-L:text-[50px] 
+                  max-mobile-M:text-[46px] 
+                  max-mobile-S:text-[38px]
+          
+                  contact_me_anim
+
+                  " id="contactme">contact me</h1>
+                </div>
+
+                <div class="flex justify-center items-center flex-wrap gap-[450px] mt-[120px] contact_responsive">
+                    <div class="">
+
+                      <div class="info_of_divs email_div_anim">
+                        <i class="fa-regular fa-envelope text-6xl" style="color: #ffffff;"></i>
+                        <p class="max-mobile-M:text-[20px]">
+                          datojanezashvili9@gmail.com
+                        </p>
+                      </div>
+                      
+                        <div class="info_of_divs location_div_anim">
+                          <i class="fa-solid fa-location-pin text-6xl" style="color: #ffffff;"></i>
+                          <p class="max-mobile-M:text-[20px]">Georgia, Gori</p>
+
+                        </div>
+                      
+                      <div class="info_of_divs phone_div_anim">
+                        <i class="fa-solid fa-phone text-6xl" style="color: #ffffff;"></i>
+                        <p class="max-mobile-M:text-[20px]">
+                        +995123345567
+                        </p>
+                      </div>
+                    
+                    </div>
+
+
+                    <form class="flex flex-col justify-center items-center gap-14 w-[700px] h-[600px] backdrop-filter backdrop-blur-md bg-opacity-80 bg-[#71816D] rounded-2xl
+                    
+                    max-mobile-L:ml-[15px]
+                    max-mobile-S:w-[320px]
+
+
+                    form_anim
+                    ">
+                        
+                      <input type="text" name="" id="name" placeholder="Name" class="input_style">
+
+                      <input type="text" name="" id="lastName" placeholder="Last Name" class="input_style lastNameClass">
+                       
+                      <input type="text" name="" id="lastName" placeholder="Subjcet" class="input_style">
+
+                      <input type="email" placeholder="Email" class="input_style">
+                      
+                      <input type="text" placeholder="Message" class="input_style">
+
+                      <button class="w-[250px] h-[60px] text-white font-extrabold bg-[#3E5641] opacity-70 rounded-2xl sheen-button">Send Message!</button>
+
+                    </form>
+                  </div>    
+
+              </section>
+              
+              <!-- FOOTER SECTION -->
+
+                  <footer class="mt-[400px] w-full h-[700px] max-laptop-L:h-[1000px] bg-gradient-to-r from-[#5D3A00] to-[#934B00] pt-24 flex flex-wrap justify-center items-start gap-[200px] max-laptop-L:gap-[79.99px] footer_anim">
+                    <div >
+                      <div>
+                        <h1 class="footer_title">
+                          find me here<i class="fa-solid fa-arrow-up rotate-[180deg] ml-2" style="color: #ffffff;"></i>
+                        </h1>
+                      </div>
+              
+                      <div class="mt-5 leading-[200px]">
+                        <a href="https://github.com/masterjaneza" target="_blank">
+                            <h2 class="footer_social_links">
+                              <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                              github
+                            </h2>
+                        </a>
+                        
+                        <a href="https://www.facebook.com/profile.php?id=100092968960051" target="_blank">
+                          <h2 class="footer_social_links">
+                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            facebook
+                          </h2>
+                        </a>
+                          
+                        <a href="https://www.instagram.com/masterjaneza.is.here.for.you/" target="_blank">
+                            <h2 class="footer_social_links">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            instagram
+                          </h2>
+                        </a>
+                
+                      </div>
+                      
+                    </div>
+              
+                    <div>
+
+                      <!-- Explore part -->
+
+                      <div class="max-mobile-S:mt-[-280px] ">
+                        <h1 class="footer_title">
+                          exolore<i class="fa-solid fa-arrow-up rotate-[180deg] ml-2" style="color: #ffffff;"></i>
+                        </h1>
+                      </div>
+              
+                      <div class="mt-5 leading-[200px]">
+                          <h2 class="footer_explore ">
+                            HOME
+                          </h2>
+                        
+                            <h2 class="footer_explore ">
+                            ABOUT ME
+                          </h2>
+                        
+                        <h2 class="footer_explore ">
+                          PROJCETS
+                        </h2>
+              
+                        <h2 class="footer_explore ">
+                           GALLERY
+                        </h2>
+              
+                        <h2 class="footer_explore">
+                          CONTACT
+                        </h2>
+              
+                      </div>
+                      
+                    </div>
+                  </div>
+                                
+                  
+                </footer>
+    
+                <div class="flex justify-center">
+                  <h1 class="mt-[-270px] text-[40px] font-normal font-rubik_vinyl text-white masterjaneza_anim">MasterJaneza</h1>
+                </div>
+
+              </section>
+              
+
+
+
+
+
+    <!-- My Mission & Vision Section -->
+<!-- 
+
+    <section class="mt-[200px] w-full flex justify-center items-center flex-wrap
+      
+      max-laptop-L:mt-[700px]
+    ">
+      <div class="flex flex-col items-start m-14">
+        <p class="capitalize text-[36px] font-lato font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-[#26413C] to-[#8AB0AB]">my mission</p>
+        <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0]">
+          <p class="font-inconsolata text-[20px] leading-7 font-semibold tracking-[1px] p-8">My mission is to be part of a continuous process of development, innovation, and knowledge sharing, where I use my technical skills and mentorship to help others grow professionally. My goal is to create high-quality, effective, and user-centric technological solutions that enhance the industry and strengthen teamwork. Mentorship for me is not just about transferring knowledge; it’s also a source of inspiration that encourages the next generation to acquire skills and confidently pursue their goals.</p>
+        </div>
+      </div>
+      
+      <div class="flex flex-col items-start">
+        <p class="capitalize text-[36px] font-lato font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-[#26413C] to-[#8AB0AB]">my vision</p>
+        <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0]">
+          <p class="font-inconsolata text-[20px] leading-7 font-semibold tracking-[1px] p-8">My vision is to be a leader in the technology and design fields, combining innovative approaches with mentorship to support the professional growth of future generations. I see myself not only as the author of successful projects but also as a leader who fosters new talents through mentorship and guides them toward career success. I take pride in being part of a process that ignites innovation and nurtures new professionals who will continue to drive the development of the industry.
+          </p>
+        </div>
+      </div>
+
+    </section> -->
+
+
+
+
 
     <!-- Auto type libraby CDN -->
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+
+    <!-- JS gsap library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- JS scroll animation library - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <!-- JS scroll to plugin - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- LENIS - for smooth animation -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+<!-- 
     <script>
         const toggleBtn = document.querySelector('.toggle_btn');
         const toggleBtnIcon = document.querySelector('.toggle_btn i');
@@ -203,13 +614,101 @@
 
 
         let anims = [...document.querySelectorAll("[data-anim]")];
-console.log(anims);
-let click = (el, cb) => el.addEventListener("click", cb);
-let toggle = (el) => el.classList.toggle("toggled");
-let clickTog = (el) => click(el, () => toggle(el));
-anims.map(clickTog);
+        console.log(anims);
+        let click = (el, cb) => el.addEventListener("click", cb);
+        let toggle = (el) => el.classList.toggle("toggled");
+        let clickTog = (el) => click(el, () => toggle(el));
+        anims.map(clickTog);
 
-    </script>
+
+
+        // scroll animation across to whole website
+
+        // Registered plugin
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Img animation 
+
+        gsap.from(".img_anim", {
+        scrollTrigger: {
+            trigger: ".img_anim",
+            start: "top 80%", // Adjust this value as needed
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+        },
+        duration: 0.7,
+        x: -1000,
+        scaleX: 2.5,
+        scaleY: 0.2,
+        transformOrigin: "100% 50%",
+        filter: "blur(40px)",
+        opacity: 0,
+        ease: "cubic-bezier(0.230, 1.000, 0.320, 1.000)"
+        });
+
+
+        // Animation for p_text_anim
+        gsap.from(".p_text_anim", {
+        scrollTrigger: {
+            trigger: ".p_text_anim",
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+        },
+        duration: 0.7,
+        filter: "blur(12px)",
+        opacity: 0,
+        ease: "cubic-bezier(0.550, 0.085, 0.680, 0.530)"
+        });
+        
+        
+        // Animation for text_anim
+        gsap.from(".text_anim", {
+        scrollTrigger: {
+            trigger: ".text_anim",
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+        },
+        duration: 0.7,
+        letterSpacing: "-0.5em",
+        opacity: 0,
+        ease: "cubic-bezier(0.215, 0.610, 0.355, 1.000)"
+        });
+                
+
+        // Animation for btn_anim
+        gsap.from(".btn_anim", {
+        scrollTrigger: {
+            trigger: ".btn_anim",
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+        },
+        duration: 0.7,
+        scaleX: 0,
+        opacity: 1,
+        ease: "cubic-bezier(0.250, 0.460, 0.450, 0.940)"
+        });
+
+
+        // Animation for sheen-button
+        gsap.from(".sheen-button", {
+        scrollTrigger: {
+            trigger: ".sheen-button",
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+        },
+        duration: 0.7,
+        x: -100,
+        opacity: 0,
+        ease: "power1.out"
+        });
+
+    </script> -->
+
 
 </body>
 </html>
@@ -217,3 +716,4 @@ anims.map(clickTog);
 
 
 <!--  -->
+
