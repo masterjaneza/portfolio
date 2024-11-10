@@ -9,6 +9,32 @@ toggleBtn.onclick = function () {
     toggleBtnIcon.classList = isOpen ?"fa-solid fa-xmark" : 'fa-solid fa-bars'
 }
 
+
+
+// Custom Cursor
+
+
+const cursorDot = document.querySelector("[data-cursor-dot]")
+    const cursorOutline = document.querySelector("[data-cursor-outline]")
+    
+    window.addEventListener('mousemove', function(e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+      
+      cursorDot.style.left = `${posX}px`
+      cursorDot.style.top = `${posY}px`
+
+      // cursorOutline.style.left = `${posX}px`
+      // cursorOutline.style.top = `${posY}px`
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+      }, {duration: 500, fill: 'forwards'})
+
+
+    })
+
+
 // Auto type effect
 let typed = new Typed('.auto_type', {
     strings : ['FULL-STACK DEVELOPER👨‍💻🌐', 'UI DESIGNER🎨💻', 'GRAPHIC DESIGNER✏️🖼️', 'MENTOR👨‍🏫'],
@@ -198,7 +224,7 @@ gsap.fromTo(".second_progress_bar_anim",
       duration: 0.7, 
       ease: "ease-out",
       scrollTrigger: {
-        trigger: ".first_progress_bar_anim",
+        trigger: ".second_progress_bar_anim",
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none reverse",
@@ -221,7 +247,7 @@ gsap.fromTo(".third_progress_bar_anim",
       duration: 0.7, 
       ease: "ease-out",
       scrollTrigger: {
-        trigger: ".first_progress_bar_anim",
+        trigger: ".third_progress_bar_anim",
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none reverse",
@@ -231,9 +257,11 @@ gsap.fromTo(".third_progress_bar_anim",
     }
   );
   
+
+  // Extra space problem fixed!
   gsap.fromTo(".fourth_progress_bar_anim", 
     { 
-      x: 120, 
+      x: 20, 
       opacity: 0 
     }, 
     { 
@@ -242,7 +270,7 @@ gsap.fromTo(".third_progress_bar_anim",
       duration: 0.7, 
       ease: "ease-out",
       scrollTrigger: {
-        trigger: ".first_progress_bar_anim",
+        trigger: ".fourth_progress_bar_anim",
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none reverse",
@@ -306,7 +334,7 @@ gsap.fromTo(".third_progress_bar_anim",
 
     // Amazon Projcet Animation
 
-    gsap.fromTo('.project_div_3', {x: 200, opacity:0}, {
+    gsap.fromTo('.project_div_3', {x: 40, opacity:0}, {
       x: 0,
       delay: 0.8,
       duration: 2.4,
@@ -421,7 +449,7 @@ gsap.to('.mission_txt_anim', {
 
 // contact me title animation
 
-gsap.fromTo('.contact_me_anim', {scale: 1.5}, {scale: 1, duration: 0.3, scrollTrigger: {
+gsap.fromTo('.contact_me_anim', {scale: 0.5}, {scale: 1, duration: 0.3, ease: 'bounce',scrollTrigger: {
   trigger: '.contact_me_anim',
   start: 'top 80%',
   end: 'bottom 20%',
@@ -576,6 +604,9 @@ requestAnimationFrame(raf);
 
 let number1 = document.getElementById('number1');
 let number2 = document.getElementById('number2');
+let number3 = document.getElementById('number3');
+let number4 = document.getElementById('number4');
+
 let counter1 = 0;
 let counter2 = 0;
 let counter3 = 0;

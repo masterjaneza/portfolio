@@ -42,8 +42,8 @@ module.exports = {
         'max-425': {'max': '425px'},
         'max-375': {'max': '375px'},
         'max-320': {'max': '320px'},
-
-
+        
+        'max-435': {'max': '435px'},
 
 
 
@@ -54,11 +54,6 @@ module.exports = {
         'max-mobile-L': {'max': '425px'},
         'max-mobile-M': {'max': '375px'},
         'max-mobile-S': {'max': '320px'}
-
-
-
-
-
 
 
 

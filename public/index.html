@@ -9,6 +9,10 @@
 </head>
 <body>
 
+    
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
      <!-- Main container  -->
     <div class="max-mobile-S:w-full">
         <!-- header lg:w-full mlg:w-full max-xl:w-full-->
@@ -23,7 +27,7 @@
             <!-- nav -->
             <nav class="
             
-            w-[100%] h-32 bg-[rgba(0,0,0,.15)] p-12  hover:bg-[rgba(102,102,102,0.7)] duration-[600ms] ease-out cursor-pointer
+            w-[100%] h-32 bg-[rgba(0,0,0,.15)] p-12  hover:bg-[rgba(102,102,102,0.7)] duration-[600ms] ease-out cursor-none
             
             ">
 
@@ -31,27 +35,27 @@
                 <ul class="flex">
                     <li class="up uppercase font-bold font-rubik text-white text-2xl mr-5 max-425:ml-[50px] max-375:ml-[50px] max-320:ml-[20px]">PROGRAMMER.</li>
 
-                    <li class="up1 custom-nav-li-style underline-hover max-1080:hidden"><a href="#home">HOME</a></li>
-                    <li class="up2 custom-nav-li-style underline-hover max-1080:hidden"><a href="#aboutme">ABOUT ME</a></li>
-                    <li class="up3 custom-nav-li-style underline-hover max-1080:hidden"><a href="#myprojects">PROJECTS</a></li>
-                    <li class="up4 custom-nav-li-style underline-hover max-1080:hidden"><a href="#gallery">GALLERY</a></li>
-                    <li class="up5 custom-nav-li-style underline-hover max-1080:hidden"><a href="#contactme">CONTACT</a></li>
+                    <li class="up1 custom-nav-li-style underline-hover max-1080:hidden "><a href="#home">HOME</a></li>
+                    <li class="up2 custom-nav-li-style underline-hover max-1080:hidden "><a href="#aboutme">ABOUT ME</a></li>
+                    <li class="up3 custom-nav-li-style underline-hover max-1080:hidden "><a href="#myprojects">PROJECTS</a></li>
+                    <li class="up4 custom-nav-li-style underline-hover max-1080:hidden "><a href="#gallery">GALLERY</a></li>
+                    <li class="up5 custom-nav-li-style underline-hover max-1080:hidden "><a href="#contactme">CONTACT</a></li>
                     <!-- class="up6 relative left-[1400px] md:left-[600px] sm:left-[300px] max-3xl:left-[900px]" -->
                     <li class="up6 relative 3xl:left-[1500px] 2xl:left-[830px] xl:left-[400px] lg:left-[120px] max-1080:hidden">
                         <a href="https://github.com/masterjaneza" target="_blank">
-                            <img class="max-w-[24px]" src="/images/icons8-github-30 (1).png" alt="">
+                            <img class="max-w-[24px] cursor-none" src="/images/icons8-github-30 (1).png" alt="">
                         </a>
                     </li>
 
                     <li class="up6 relative 3xl:left-[1500px] 2xl:left-[830px]  xl:left-[400px] lg:left-[120px] max-1080:hidden">
                         <a href="https://www.facebook.com/profile.php?id=100092968960051" target="_blank">
-                            <img class="max-w-[24px]" src="/images/icons8-facebook-30.png" alt="">
+                            <img class="max-w-[24px] cursor-none after_hover" src="/images/icons8-facebook-30.png" alt="">
                         </a>
                     </li>
                     
                     <li class="up6 relative 3xl:left-[1500px] 2xl:left-[830px]  xl:left-[400px] lg:left-[120px] max-1080:hidden">
                         <a href="https://www.instagram.com/masterjaneza.is.here.for.you/"  target="_blank">
-                            <img class="max-w-[24px]" src="/images/icons8-instagram-30.png" alt="">
+                            <img class="max-w-[24px] cursor-none" src="/images/icons8-instagram-30.png" alt="">
                         </a>
                     </li>
                 
@@ -60,7 +64,7 @@
                 
                 
                 <!-- toggle button -->
-                <div class="toggle_btn float-right text-white text-3xl relative -top-[35px] hidden max-1080:block cursor-pointer max-425:top-[2em] max-425:right-[6em] max-375:right-[125px] max-375:toggle_btn max-320:right-[105px]">
+                <div class="toggle_btn float-right text-white text-3xl relative -top-[35px] hidden max-1080:block cursor-none max-425:top-[2em] max-425:right-[6em] max-375:right-[125px] max-375:toggle_btn max-320:right-[105px]">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <!-- Drop down Menu -->
@@ -144,8 +148,10 @@
         <!-- Start of Div -->
         <main class="w-full h-[900px] mt-[300px] relative flex justify-center items-center gap-[70px] max-laptop:flex-col max-laptop:justify-between max-laptop:mt-[600px]">
             
-            <div class="flex -mt-[400px] max-laptop:mb-0"  id="aboutme" >
-                <img src="/images/portfolio image-2.jpg" alt="Image of Davit Janezashvili" class="img_glow img_anim w-[1100px] h-[770px] mr-[100px] rounded-3xl  max-laptop:w-[600px] max-laptop:h-[600px] max-mobile-L:w-[400px] max-mobile-L:h-[450px] max-mobile-S:w-[300px] max-mobile-S:h-[350px] ">
+            <div class="flex -mt-[400px] max-435:w-[330px] max-sm:[100px] max-laptop:mb-0"  id="aboutme">
+                <img src="images/portfolio image-2.jpg" alt="Image of Davit Janezashvili" class="img_glow img_anim w-[930px] h-[700px] mr-[100px] rounded-3xl  max-laptop:w-[600px] max-laptop:h-[600px] max-mobile-L:w-[400px] max-mobile-L:h-[450px] max-mobile-S:w-[280px] max-mobile-S:h-[250px] max-mobile-S:mt-12 max-mobile-S:ml-4 
+
+                ">
             </div> 
                 
             <div class="-mt-[500px] flex flex-col gap-16 max-laptop:mb-[160px]">
@@ -231,6 +237,7 @@
               </div>
           
               <!-- Mentor Design bar -->
+               <!-- Maybe fixed, i dont know - i'll return -->
               <div class="skill4 fourth_progress_bar_anim">
                 <div class="outer4">
                   <div class="inner4">
@@ -249,6 +256,8 @@
                 </svg>
               </div>
             </div>
+
+
           </section>
           
 
@@ -256,7 +265,7 @@
     </div>
 
     <!-- Projects Section -->
- 
+    <!-- Extra space problem fixed! -->
     <section class="mt-[300px] w-full h-[500px]">
       <div class="flex justify-center items-center mb-[100px]">
         <h1 class="font-lato text-[70px] tracking-[5px] uppercase text-transparent bg-clip-text bg-gradient-to-b from-[#CE6C47] to-[#241E4E]
@@ -286,7 +295,7 @@
             </span>
           
             <div class="hidden group-hover:block group-hover:bg-gray-300">COMING SOON!</div>
-          </div>
+        </div>
       
         </div>
     
@@ -297,7 +306,7 @@
 
     <!-- Gallery Section -->
 
-    <section class="mt-[350px] w-full h-[1000px]">
+    <section class="mt-[350px] w-full h-[1000px] max-435:mt-[800px]">
       <div class="flex flex-col justify-center items-center mb-[100px]
         max-tablet:mt-[450px] 
         max-mobile-L:mt-[750px]
@@ -305,11 +314,13 @@
         max-mobile-S:mt-[550px]
       ">
       <!-- GALLERY TITLE TEXT -->
+
+      <!-- fixed extra space problem -->
         <h1 class="font-lato text-[70px] font-extrabold tracking-[5px] uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#D2BF55] to-[#2B061E]
         
         max-mobile-L:text-[50px] 
         max-mobile-M:text-[50px] 
-        max-mobile-S:text-[43px]
+        max-mobile-S:text-[39px]
 
         gallery_text_anim
         " id="gallery">gallery</h1>
@@ -323,6 +334,8 @@
         max-mobile-S:text-[13px]
         
         img_text_anim
+
+        max-435:ml-11
         ">images of me and with my students</h2>
       </div>
 
@@ -348,13 +361,13 @@
 
       <!-- My Mission & Vision Section -->
         
-          <section class="mt-[200px] w-full flex justify-center items-center flex-wrap ">
+          <section class="mt-[200px] w-full flex justify-center items-center flex-wrap">
             
             <div class="flex flex-col items-start m-14">
                 <div class="overflow-hidden w-0 whitespace-nowrap reveal">
                   <p class="inline-block capitalize text-[36px] font-lato font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-[#26413C] to-[#8AB0AB] max-mobile-S:ml-[40px]">my mission</p>
                 </div>
-              <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0] max-mobile-L:w-[350px] max-mobile-L:h-[610px] max-mobile-S:w-[300px] max-mobile-S:h-[800px]">
+              <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0] max-mobile-L:w-[350px] max-mobile-L:h-[610px] max-mobile-S:w-[300px] max-mobile-S:h-[800px] max-435:w-[350px] max-435:h-[750px]">
                 <div class="overflow-hidden w-0 whitespace-normal mission_txt_anim">   
                   <p class="font-inconsolata text-[20px] leading-7 font-semibold tracking-[1px] p-8 max-mobile-L:tracking-[0px]"><span>My mission is to be part of a continuous process of development, innovation, and knowledge sharing,
                   where I use my technical skills and mentorship to help others grow professionally.
@@ -372,7 +385,7 @@
                   <p class="inline-block capitalize text-[36px] font-lato font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-[#26413C] to-[#8AB0AB] max-mobile-S:ml-[40px]">my vision</p>
                 </div>
 
-                <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0] max-mobile-L:w-[350px] max-mobile-L:h-[610px] max-mobile-S:w-[300px] max-mobile-S:h-[800px]">
+                <div class="mt-[20px] w-[750px] h-[350px] bg-[#f1f0f0] max-mobile-L:w-[350px] max-mobile-L:h-[610px] max-mobile-S:w-[300px] max-mobile-S:h-[800px] max-435:w-[350px] max-435:h-[750px]">
                   <div class="overflow-hidden w-0 whitespace-normal mission_txt_anim">   
                       <p class="font-inconsolata text-[20px] leading-7 font-semibold tracking-[1px] p-8 max-mobile-L:tracking-[0px] mission_txt_anim">My vision is to be a leader in the technology and design fields, combining innovative approaches with mentorship to support the professional growth of future generations. I see myself not only as the author of successful projects but also as a leader who fosters new talents through mentorship and guides them toward career success. I take pride in being part of a process that ignites innovation and nurtures new professionals who will continue to drive the development of the industry.
                       </p>
@@ -389,11 +402,13 @@
 
 
               <section class="mt-[400px] w-full">
+
+              <!-- Extra space problem fixed! -->
                 <div class="flex justify-center">
                   <h1 class="font-lato text-[70px] font-extrabold tracking-[5px] uppercase text-transparent bg-clip-text bg-gradient-to-bl from-[#587B7F] to-[#FF4E00]
                   
-                  max-mobile-L:text-[50px] 
-                  max-mobile-M:text-[46px] 
+                  max-mobile-L:text-[45px] 
+                  max-mobile-M:text-[40px] 
                   max-mobile-S:text-[38px]
           
                   contact_me_anim
@@ -401,32 +416,27 @@
                   " id="contactme">contact me</h1>
                 </div>
 
-                <div class="flex justify-center items-center flex-wrap gap-[450px] mt-[120px] contact_responsive">
-                    <div class="">
-
-                      <div class="info_of_divs email_div_anim">
-                        <i class="fa-regular fa-envelope text-6xl" style="color: #ffffff;"></i>
-                        <p class="max-mobile-M:text-[20px]">
-                          datojanezashvili9@gmail.com
-                        </p>
-                      </div>
-                      
-                        <div class="info_of_divs location_div_anim">
-                          <i class="fa-solid fa-location-pin text-6xl" style="color: #ffffff;"></i>
-                          <p class="max-mobile-M:text-[20px]">Georgia, Gori</p>
-
+                  <div class="flex justify-center items-center flex-wrap gap-[150px] mt-[120px] contact_responsive">
+                        <div class="info_of_divs email_div_anim">
+                          <i class="fa-regular fa-envelope text-6xl" style="color: #ffffff;"></i>
+                          <p class="max-mobile-M:text-[20px]">
+                            datojanezashvili9@gmail.com
+                          </p>
                         </div>
-                      
-                      <div class="info_of_divs phone_div_anim">
-                        <i class="fa-solid fa-phone text-6xl" style="color: #ffffff;"></i>
-                        <p class="max-mobile-M:text-[20px]">
-                        +995123345567
-                        </p>
-                      </div>
+                        
+                          <div class="info_of_divs location_div_anim">
+                            <i class="fa-solid fa-location-pin text-6xl" style="color: #ffffff;"></i>
+                            <p class="max-mobile-M:text-[20px]">Georgia, Gori</p>
+
+                          </div>
+                        
+                        <div class="info_of_divs phone_div_anim">
+                          <i class="fa-solid fa-phone text-6xl" style="color: #ffffff;"></i>
+                          <p class="max-mobile-M:text-[20px]">
+                          +995123345567
+                          </p>
+                        </div>
                     
-                    </div>
-
-
                     <form class="flex flex-col justify-center items-center gap-14 w-[700px] h-[600px] backdrop-filter backdrop-blur-md bg-opacity-80 bg-[#71816D] rounded-2xl
                     
                     max-mobile-L:ml-[15px]
@@ -455,7 +465,7 @@
               
               <!-- FOOTER SECTION -->
 
-                  <footer class="mt-[400px] w-full h-[700px] max-laptop-L:h-[1000px] bg-gradient-to-r from-[#5D3A00] to-[#934B00] pt-24 flex flex-wrap justify-center items-start gap-[200px] max-laptop-L:gap-[79.99px] footer_anim">
+                  <footer class="mt-[400px] w-full h-[700px] max-laptop-L:h-[1000px] bg-gradient-to-r from-[#5D3A00] to-[#934B00] pt-24 flex flex-wrap justify-center items-start gap-[200px] max-laptop-L:gap-[79.99px] max-435:gap-[100px] footer_anim">
                     <div >
                       <div>
                         <h1 class="footer_title">
@@ -464,21 +474,21 @@
                       </div>
               
                       <div class="mt-5 leading-[200px]">
-                        <a href="https://github.com/masterjaneza" target="_blank">
+                        <a href="https://github.com/masterjaneza" target="_blank" class="cursor-none">
                             <h2 class="footer_social_links">
                               <i class="fa-brands fa-github" style="color: #ffffff;"></i>
                               github
                             </h2>
                         </a>
                         
-                        <a href="https://www.facebook.com/profile.php?id=100092968960051" target="_blank">
+                        <a href="https://www.facebook.com/profile.php?id=100092968960051" target="_blank" class="cursor-none">
                           <h2 class="footer_social_links">
                             <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
                             facebook
                           </h2>
                         </a>
                           
-                        <a href="https://www.instagram.com/masterjaneza.is.here.for.you/" target="_blank">
+                        <a href="https://www.instagram.com/masterjaneza.is.here.for.you/" target="_blank" class="cursor-none">
                             <h2 class="footer_social_links">
                             <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
                             instagram
@@ -531,15 +541,16 @@
                 <div class="flex justify-center">
                   <h1 class="mt-[-270px] text-[40px] font-normal font-rubik_vinyl text-white masterjaneza_anim">MasterJaneza</h1>
                 </div>
-
-              </section>
-              
-
-
-
-
-
-    <!-- My Mission & Vision Section -->
+                
+        <!-- <div class="w-[500px] h-[500px] bg-blue-500 max-435:w-[100px] max-435:h-[100px] max-435:text-white max-435:text-2xl">
+          Test Box
+      </div>
+       -->
+                       
+                            
+                          </section>
+                          
+      <!-- My Mission & Vision Section -->
 <!-- 
 
     <section class="mt-[200px] w-full flex justify-center items-center flex-wrap

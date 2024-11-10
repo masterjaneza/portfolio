@@ -25,7 +25,13 @@
 @layer base {
     /* reset padding and margin */
     * {
-        @apply p-0 m-0 box-border;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      cursor: none;
     }
 
     ::selection {
@@ -43,6 +49,34 @@
 }
 
 
+/* Custom cursor style */
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);      
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
 /* styling li element */
 
 .custom-nav-li-style {
@@ -56,7 +90,7 @@
     display: inline-block;
     text-decoration: none; /* Remove default underline */
     color: white;
-    cursor: pointer;
+    cursor: none;
 
 }
   
@@ -375,7 +409,7 @@
   position: relative;
   overflow: hidden;
   border: none;
-  cursor: pointer;
+  cursor: none;
   transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -630,7 +664,7 @@ svg {
 
 
 .contact_responsive {
-  @apply max-laptop-L:gap-[200px] max-mobile-L:gap-[150px]
+  @apply max-laptop-L:gap-[200px] max-mobile-L:gap-[20px] 
 }
 
 
@@ -643,7 +677,7 @@ svg {
 
 
 .footer_title {
-  @apply text-white font-inconsolata font-extrabold capitalize text-[30px] ;
+  @apply text-white font-inconsolata font-extrabold capitalize text-[30px];
 }
 
 
@@ -659,6 +693,15 @@ svg {
 .footer_explore {
   @apply font-rubik font-light text-white text-xl text-[15px];
 }
+
+
+
+
+
+
+
+/* After Finish - some changes  */
+
 
 
 /* Progress bar animation */
